@@ -1,6 +1,6 @@
-# SQL - Com 34955
+# SQL - CoderHouse - Comisión 34955
 
-RedStore® DDBB
+RedStore® BBDD
 
 ## Autor ¬
 
