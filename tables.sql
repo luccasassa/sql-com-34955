@@ -12,7 +12,7 @@ CREATE TABLE producto (
   nombre_producto VARCHAR(50) NOT NULL,
   vista_producto VARCHAR(50) NOT NULL,
   predesc_producto VARCHAR(100) NOT NULL,
-  desc_producto VARCHAR(500) NOT NULL,
+  desc_producto VARCHAR(700) NOT NULL,
   id_categoria INT UNSIGNED NOT NULL,
   stock_producto INT NOT NULL,
   precio_producto INT NOT NULL,
