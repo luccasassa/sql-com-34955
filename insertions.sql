@@ -775,3 +775,20 @@ VALUES (
   5,
   5
 );
+
+#UPDATE STOCK
+
+UPDATE `redstore`.`producto` SET `stock_producto` = '0' WHERE (`id_producto` = '42');
+UPDATE `redstore`.`producto` SET `stock_producto` = '1' WHERE (`id_producto` = '43');
+UPDATE `redstore`.`producto` SET `stock_producto` = '0' WHERE (`id_producto` = '7');
+UPDATE `redstore`.`producto` SET `stock_producto` = '0' WHERE (`id_producto` = '21');
+UPDATE `redstore`.`producto` SET `stock_producto` = '0' WHERE (`id_producto` = '25');
+UPDATE `redstore`.`producto` SET `stock_producto` = '0' WHERE (`id_producto` = '29');
+
+#NUEVO CARRITO PARA VENTA
+
+INSERT INTO `redstore`.`carrito` (`id_carrito`, `cant_prod_carrito`, `id_producto`) VALUES ('6', '1', '22');
+
+#NUEVA VENTA
+
+INSERT INTO `redstore`.`venta` (`id_venta`, `fecha_venta`, `id_carrito`, `id_cliente`) VALUES ('6', '2022-10-15 17:10:20', '6', '3');
