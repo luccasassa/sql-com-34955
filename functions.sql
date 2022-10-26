@@ -1,16 +1,16 @@
 USE redstore;
-DROP function IF EXISTS buscar_por_palabra;
-DROP function IF EXISTS precio_mas_iva;
+DROP FUNCTION IF EXISTS cantidad_productos_segun;
+DROP FUNCTION IF EXISTS precio_mas_iva;
 
 #FUNCION 1
 delimiter //
-CREATE FUNCTION buscar_por_palabra (palabra VARCHAR(20)) RETURNS INT
+CREATE FUNCTION cantidad_productos_segun (palabra VARCHAR(20)) RETURNS INT
 READS SQL DATA
 BEGIN
 DECLARE resultado INT;
 SELECT COUNT(*) INTO resultado FROM producto WHERE predesc_producto LIKE CONCAT('%',palabra,'%');
 RETURN resultado;
-END//
+END //
 delimiter ;
 
 #FUNCION 2
@@ -21,5 +21,5 @@ BEGIN
 DECLARE resultado INT;
 SELECT precio_producto INTO resultado FROM producto WHERE id_producto = calcular;
 RETURN resultado + (resultado * 0.30);
-END//
+END //
 delimiter ;
