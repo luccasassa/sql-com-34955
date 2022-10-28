@@ -25,7 +25,7 @@ BEGIN
 	CASE WHEN campo = 7 AND orden = 2 THEN stock_producto END DESC, 
     CASE WHEN campo = 8 AND orden = 1 THEN precio_producto END, 
 	CASE WHEN campo = 8 AND orden = 2 THEN precio_producto END DESC; 
-END// 
+END // 
 DELIMITER ;
 
 # CALL ordenar_productos (5, 1);
