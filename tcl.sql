@@ -26,7 +26,7 @@ SELECT * FROM categoria;
 SAVEPOINT SP_0;
 
 INSERT INTO carrito (id_carrito, cant_prod_carrito, id_producto) VALUES (90,1,1);
-INSERT INTO carrito (id_carrito, cant_prod_carrito, id_producto) VALUE (91,1,2);
+INSERT INTO carrito (id_carrito, cant_prod_carrito, id_producto) VALUES (91,1,2);
 INSERT INTO carrito (id_carrito, cant_prod_carrito, id_producto) VALUES (92,1,3);
 INSERT INTO carrito (id_carrito, cant_prod_carrito, id_producto) VALUES (93,1,4);
 INSERT INTO carrito (id_carrito, cant_prod_carrito, id_producto) VALUES (94,1,5);
