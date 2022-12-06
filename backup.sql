@@ -19,7 +19,6 @@ Las tablas del backup son:
 */
 #########################################################
 
-
 /*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
 /*!40101 SET @OLD_CHARACTER_SET_RESULTS=@@CHARACTER_SET_RESULTS */;
 /*!40101 SET @OLD_COLLATION_CONNECTION=@@COLLATION_CONNECTION */;
@@ -49,6 +48,16 @@ LOCK TABLES `categoria` WRITE;
 /*!40000 ALTER TABLE `categoria` DISABLE KEYS */;
 INSERT INTO `categoria` VALUES (1,'Accesorios'),(2,'Altavoces'),(3,'Amplificadores'),(4,'Auriculares'),(5,'Camaras'),(6,'Home'),(7,'Objetivos'),(8,'PlayStation'),(9,'Reproductores');
 /*!40000 ALTER TABLE `categoria` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Dumping data for table `categoria_log`
+--
+
+LOCK TABLES `categoria_log` WRITE;
+/*!40000 ALTER TABLE `categoria_log` DISABLE KEYS */;
+INSERT INTO `categoria_log` VALUES (1,'INSERT','root@localhost','2022-11-28 11:50:20',10,'Nueva Categoria trigger'),(2,'UPDATE BEFORE','root@localhost','2022-11-28 11:51:15',10,'Nueva Categoria trigger'),(3,'UPDATE AFTER','root@localhost','2022-11-28 11:51:15',10,'Categoria por trigger'),(4,'DELETE','root@localhost','2022-11-28 11:51:35',10,'Categoria por trigger');
+/*!40000 ALTER TABLE `categoria_log` ENABLE KEYS */;
 UNLOCK TABLES;
 
 --
@@ -100,6 +109,16 @@ LOCK TABLES `venta` WRITE;
 INSERT INTO `venta` VALUES (1,'2022-01-23 12:45:55',2,1),(2,'2022-02-11 14:20:08',1,2),(3,'2022-04-17 22:11:52',4,3),(4,'2022-07-29 17:40:21',3,4),(5,'2022-09-09 20:30:40',5,5),(6,'2022-10-15 17:10:20',6,3);
 /*!40000 ALTER TABLE `venta` ENABLE KEYS */;
 UNLOCK TABLES;
+
+--
+-- Dumping data for table `venta_log`
+--
+
+LOCK TABLES `venta_log` WRITE;
+/*!40000 ALTER TABLE `venta_log` DISABLE KEYS */;
+INSERT INTO `venta_log` VALUES (1,'INSERT','root@localhost','2022-11-29 15:18:49',7,'2022-09-19 10:10:10',5,5),(2,'UPDATE BEFORE','root@localhost','2022-11-29 15:19:03',7,'2022-09-19 10:10:10',5,5),(3,'UPDATE AFTER','root@localhost','2022-11-29 15:19:03',7,'2022-09-19 10:10:10',2,5),(4,'DELETE','root@localhost','2022-11-29 15:19:37',7,'2022-09-19 10:10:10',2,5);
+/*!40000 ALTER TABLE `venta_log` ENABLE KEYS */;
+UNLOCK TABLES;
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
 
 /*!40101 SET SQL_MODE=@OLD_SQL_MODE */;
@@ -110,4 +129,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2022-11-10 20:15:03
+-- Dump completed on 2022-12-06 12:43:41
