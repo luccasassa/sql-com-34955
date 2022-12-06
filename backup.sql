@@ -11,11 +11,13 @@ USE `redstore`;
 Las tablas del backup son: 
 - carrito
 - categoria
+- categoria_log
 - cliente
 - cliente_log
 - producto
 - producto_log
 - venta
+- venta_log
 */
 #########################################################
 
